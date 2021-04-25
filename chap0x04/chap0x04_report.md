@@ -18,7 +18,7 @@
 
   - 在个人`github`账号下创建一个小仓库shell-examples
 
-    ![创建shell-examples仓库](chap0x04_img/创建shell-examples仓库.jpg)
+    ![创建shell-examples仓库](img_results/创建shell-examples仓库.jpg)
 
   - 创建`.sh`文件，编写并运行。
 
@@ -26,7 +26,7 @@
 
   - 将文件上传到`travis`环境中运行
 
-    ![课上操作内容](chap0x04_img/课上操作内容.jpg)
+    ![课上操作内容](img_results/课上操作内容.jpg)
 
 - 任务一：用bash编写一个图片批处理脚本，实现以下功能：
 
@@ -139,7 +139,7 @@ bash img-batch-processing.sh -d img-original/ -c 100
   bash world-cup-players.sh -h
   ```
 
-  ![players帮助文档](chap0x04_img/players帮助文档.jpg)
+  ![players帮助文档](img_results/players帮助文档.jpg)
 
   
 
@@ -150,7 +150,7 @@ bash img-batch-processing.sh -d img-original/ -c 100
   bash world-cup-players.sh -ar
   ```
 
-  ![年龄区间](chap0x04_img/年龄区间.jpg)
+  ![年龄区间](img_results/年龄区间.jpg)
 
 ​       
 
@@ -159,7 +159,7 @@ bash img-batch-processing.sh -d img-original/ -c 100
 bash world-cup-players.sh -p
 ```
 
-![球员数量](chap0x04_img/球员数量.jpg)
+![球员数量](img_results/球员数量.jpg)
 
 
 
@@ -168,7 +168,7 @@ bash world-cup-players.sh -p
  bash world-cup-players.sh -n
 ```
 
-![名字长短](chap0x04_img/名字长短.jpg)
+![名字长短](img_results/名字长短.jpg)
 
 
 
@@ -177,9 +177,7 @@ bash world-cup-players.sh -p
 bash world-cup-players.sh -ac
 ```
 
-![最老最小球员](chap0x04_img/最老最小球员.jpg)
-
-
+![最老最小球员](img_results/最老最小球员.jpg)
 
 - 任务二  2/2
 
@@ -188,7 +186,7 @@ bash world-cup-players.sh -ac
  bash web-blog.sh -h
 ```
 
-![日志帮助文档](chap0x04_img/日志帮助文档.jpg)
+![日志帮助文档](img_results/日志帮助文档.jpg)
 
 
 
@@ -250,11 +248,11 @@ bash web-blog.sh -u 100
 
    解决方法：点击`activate`绿色按钮，连接上`github`即可
 
-   ![找不到shell-examples仓库](chap0x04_img/找不到shell-examples仓库.jpg)
+   ![找不到shell-examples仓库](img_results/找不到shell-examples仓库.jpg)
 
 2. `travis`构建出错
 
-   ![travis构建出错](chap0x04_img/travis构建出错.jpg)
+   ![travis构建出错](img_results/travis构建出错.jpg)
 
    错因：所有编辑的文件都放在master中
 
@@ -272,7 +270,7 @@ bash web-blog.sh -u 100
 
    错因：创建的是文件，而不是文件夹，所以拖不进
 
-   ![区分文件&文件夹](chap0x04_img/区分文件&文件夹.jpg)
+   ![区分文件&文件夹](img_results/区分文件&文件夹.jpg)
 
 7. 将处理后的文件从虚拟机中复制到主机时，报错`ssh: Could not resolve hostname c: Temporary failure in name resolution
    lost connection`
@@ -312,7 +310,9 @@ bash web-blog.sh -u 100
 
    ​                 
 
-9. 将球员和webblog数据拖进虚拟机时，在chap0x04文件夹中创建一个新的文件夹data存数据，代码运行出错
+9. 写相对路径时，若图片在子文件夹中，在路径中直接写 ![文件名](子文件夹/图片.jpg)
+
+10. 将球员和webblog数据拖进虚拟机时，在chap0x04文件夹中创建一个新的文件夹data存数据，代码运行出错
 
    ```
    awk: fatal: cannot open file `worldcupplayerinfo.tsv' for reading (No such file or directory)
@@ -322,6 +322,8 @@ bash web-blog.sh -u 100
    ```
 
    解决方法：直接将数据放在chap0x04文件夹中，无需单独创建文件夹，即可运行成功
+
+   
 
 ## 参考资料
 
